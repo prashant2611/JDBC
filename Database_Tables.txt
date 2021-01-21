@@ -1,0 +1,76 @@
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| practice           |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+
+
+mysql> use practice;
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_practice |
++--------------------+
+| college            |
+| emp                |
+| rough              |
+| stud1              |
++--------------------+
+
+
+mysql> select * from college;
++-------+---------+--------+
+| ccode | cname   | cadd   |
++-------+---------+--------+
+|    11 | MMCOE   | Pune   |
+|    21 | Sinhgad | Pune   |
+|    31 | Cummins | Pune   |
+|    41 | VNIT    | Nagpur |
+|    51 | NULL    | Narhe  |
+|    61 | PVG     | Pune   |
+|    71 | KSC     | Pune   |
+|    81 | PVG     | Pune   |
++-------+---------+--------+
+
+
+mysql> select * from emp;
++------+-----------+-----------+--------+------------+--------+
+| eid  | ename     | job       | sal    | JOD        | deptno |
++------+-----------+-----------+--------+------------+--------+
+| 1001 | Sachine   | Sales     | 110000 | 2017-10-03 |     10 |
+| 1002 | Virat     | Sales     |  37268 | 2016-11-14 |     10 |
+| 1003 | Yuvraj    | HR        |  31944 | 2016-08-05 |     20 |
+| 1004 | Harbhajan | Developer |  51909 | 2015-02-08 |     30 |
+| 1005 | Dhoni     | Tester    | 100000 | 2015-12-18 |     40 |
+| 1006 | Zaheer    | Manager   |  59859 | 2017-08-25 |     30 |
++------+-----------+-----------+--------+------------+--------+
+
+
+mysql> select * from rough;
++-------+----------+--------+
+| ccode | name     | branch |
++-------+----------+--------+
+|    81 | Prashant | IT     |
++-------+----------+--------+
+
+
+mysql> select * from stud1;
++--------+------+--------+---------+------+-------+
+| rollno | name | branch | address | mks  | ccode |
++--------+------+--------+---------+------+-------+
+|    101 | AAA  | BE     | Pune    |  470 |    11 |
+|    102 | BBB  | BE     | Pune    |  880 |    21 |
+|    103 | CCC  | BE     | Mumbai  |  600 |    11 |
+|    104 | DDD  | ME     | Mumbai  |  600 |    11 |
+|    105 | EEE  | ME     | Delhi   |  800 |    31 |
+|    106 | FFF  | Arch   | Nagpur  |  845 |    31 |
+|    107 | GGG  | Arch   | Nagpur  |  800 |    41 |
++--------+------+--------+---------+------+-------+

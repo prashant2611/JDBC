@@ -1,0 +1,9 @@
+Problem Statement:
+
+1)Display data from database. (class Select_query.java)
+2)Update data. (class Update_query.java)
+3)Insert data into database. (class Insert_data.java)
+4)Except product id from user and delete that record from database. (class Delete_data.java)
+5)Accept user information and add it into 2 tables. (class Insert_data_twoTable.java)
+6)Display data from 2 different table. (class Display_data_twotable.java)
+
